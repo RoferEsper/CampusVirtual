@@ -1,31 +1,37 @@
 import './LandingMantenimiento.css'
+import logo from './assets/logo.png'
 
 function LandingMantenimiento() {
   return (
     <div className="landing-container">
       <div className="landing-overlay" />
-      <div className="landing-content">
-        <header className="landing-header">
-          <div className="landing-logo-placeholder">
-            {/* Reemplaza este div por una etiqueta <img /> con tu logo */}
-            <span>Logo Instituto Puente</span>
-          </div>
-          <span className="landing-badge">En mantenimiento</span>
-        </header>
 
+      <div className="landing-content">
+        
+        {/* LOGO */}
+        <img
+          src={logo}
+          alt="Logo Instituto Puente"
+          className="landing-logo-image"
+        />
+
+        {/* BADGE */}
+        <span className="landing-badge">En mantenimiento</span>
+
+        {/* TEXTO PRINCIPAL */}
         <main className="landing-main">
           <h1 className="landing-title">Campus Virtual</h1>
           <h2 className="landing-subtitle">Instituto Puente</h2>
           <p className="landing-text">
-            Estamos trabajando para ofrecerte una experiencia mejor y más moderna.
-            <br />
-            
+            Estamos trabajando para ofrecerte una experiencia mejor,
+            más estable y totalmente renovada.
           </p>
         </main>
 
+        {/* FOOTER */}
         <footer className="landing-footer">
           <p>
-            &copy; {new Date().getFullYear()} Instituto Puente &mdash; Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} Instituto Puente — Todos los derechos reservados.
           </p>
         </footer>
       </div>
